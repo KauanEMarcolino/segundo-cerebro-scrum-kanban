@@ -2,8 +2,6 @@
 
 Notebook especialista em metodologias ágeis, criado no **Gemini Notebook** (antigo NotebookLM) como projeto do desafio da DIO. Ele responde só com base nas fontes que eu selecionei, mostra de onde tirou cada resposta e gera materiais de estudo.
 
-> ✏️ **Como usar este README:** tudo marcado com ✏️ é para você completar. Apague estas observações antes de publicar.
-
 🔗 **Notebook compartilhado:** [Segundo Cérebro: Scrum vs. Kanban](https://notebook.google.com/notebook/004e8bfb-8b97-4c46-a4f9-bdcba68e9a9d)
 
 ---
@@ -34,9 +32,22 @@ Notebook especialista em metodologias ágeis, criado no **Gemini Notebook** (ant
 | 4 | [The Kanban Method — David J. Anderson (Kanban Experts Series)](https://www.youtube.com/watch?v=FmZ-tAV-Gb0) — Kanban University | YouTube | EN | O próprio criador do Kanban Method explica o método no canal oficial da Kanban University. |
 | 5 | [Scrum vs. Kanban 2026 — Diferença entre Scrum e Kanban](https://www.youtube.com/watch?v=3dWWG2TJ7Fs) — canal Jiraverso | YouTube | PT-BR | Compara as duas abordagens na prática, em português. O canal leva o nome de uma ferramenta (Jira), então conferi se o vídeo ensinava em vez de vender: ele explica os conceitos sem depender da ferramenta. |
 | 6 | [What is Scrum? Explained Simply for Beginners](https://www.youtube.com/watch?v=NB-yTr0XMoc) — canal Ram N Java | YouTube | EN | Introdução bem simples ao Scrum, para iniciantes. É a fonte com menos autoridade, porque o canal é de programação e não de agilidade. Entrou só como apoio didático, e o que vale como definição é o Guia do Scrum. |
+| 7 | [Kanban Guide for Scrum Teams](https://www.scrum.org/resources/kanban-guide-scrum-teams) — Scrum.org | Site | EN | *Veio do Deep Research.* Guia oficial da Scrum.org sobre como usar Kanban dentro do Scrum. Cobre a parte do meu objetivo que as outras fontes não cobriam: como juntar os dois. |
+| 8 | What is Scrumban? — Agile Alliance | Site | EN | *Veio do Deep Research.* A Agile Alliance é a organização criada pelos autores do Manifesto Ágil. Explica o Scrumban. |
+| 9 | Scrumban Should NOT Just Be a Hybrid of Scrum and Kanban — Agile Alliance | Site | EN | *Veio do Deep Research.* Mesma organização, mas com uma visão **crítica** do Scrumban. Serve de contraponto à fonte 8. |
 
-**Fontes que o Deep Research sugeriu e eu recusei:**
-- ✏️ *Exemplo: "Blog X — recusei porque é página de venda de ferramenta."*
+### 🔎 Como usei o Deep Research (e o erro que corrigi)
+
+Pedi ao Deep Research fontes confiáveis comparando Scrum e Kanban. Ele trouxe **24 resultados**, e eu **importei todos de uma vez**, sem conferir. Depois percebi o erro: o desafio pede para importar só o que foi conferido. Então revisei um por um com os meus 4 critérios, **mantive 3 e removi 21**:
+
+| Motivo da remoção | Fontes removidas |
+|---|---|
+| **Escrita pela própria IA** (não é fonte original) | "Relatório do Deep Research: Análise Comparativa Exaustiva…". Se ficasse, o notebook passaria a citar um resumo feito por IA em vez dos autores. |
+| **Repetiam o que eu já tinha** (critério 4) | The 2020 Scrum Guide (versão em inglês do guia que já tenho em português), Scrum Guides: Home, What is Scrum?, The Official Guide to The Kanban Method, The Official Kanban Guide, The Kanban Method Infographic, What is Kanban? (Agile Alliance), How Scrum with Kanban works, Scrum with Kanban, Suggested Reading: Professional Scrum with Kanban, A Kanban primer for Scrum Teams, A Scrum primer for Kanban teams |
+| **Sites de empresas que vendem ferramentas** (critério 3) | Kanban Guide (Nulab), The 4 Core Kanban Principles and 5 Best Practices (Quire), Scrumban: Method, Comparison, and Honest Limits (Rock) |
+| **Fora do tema, sem autor claro ou incompletas** | ITIL and Agile (Scrum.org), Milestone-Kanban (Agile Alliance), Kanban for Project Management: Explanation, Functioning, Advantages, Kanban Guide for Scrum Teams – Sprint Planning Question (pergunta de fórum), Essays on Kanban Systems – Corey Ladas (só trechos no Google Books), Agile Practice Guide (livro amplo, sobre agilidade em geral) |
+
+As perguntas, os prints e os materiais do Estúdio deste README foram feitos **antes** do Deep Research, só com as fontes 1 a 6.
 
 ---
 
@@ -113,10 +124,10 @@ Regras:
 |----------|---------|
 | Mapa mental | [`materiais/mapa-mental.jpg`](materiais/mapa-mental.jpg) |
 | Slides "Sistemas Operacionais Ágeis" (15 slides) | [`materiais/slides.pdf`](materiais/slides.pdf) |
-| Guia de estudos (quiz + glossário) | ✏️ [`materiais/guia-de-estudos.pdf`](materiais/guia-de-estudos.pdf) |
+| Guia de estudos (lição com objetivos, explicações e resumo) | [`materiais/guia-de-estudos.pdf`](materiais/guia-de-estudos.pdf) |
 | Resumo em áudio "A verdadeira diferença entre Scrum e Kanban" (~26 min) | [`materiais/resumo-audio.m4a`](materiais/resumo-audio.m4a) |
 
-> ✏️ Remova da tabela o que você não gerar. Todo arquivo citado aqui precisa existir no repositório.
+> O guia de estudos foi copiado do Estúdio e salvo em PDF. O áudio original (50 MB) foi comprimido para caber no limite de upload do GitHub.
 
 ---
 
@@ -125,7 +136,8 @@ Regras:
 - **Existem dois "Kanbans".** Eu achava que Kanban era só um quadro com colunas. Descobri que há duas linhas oficiais: o Kanban Guide, mais enxuto e focado em métricas, e o Kanban Method, mais amplo e focado em mudar a organização aos poucos.
 - **Scrum e Kanban não são rivais.** As fontes mostram que dá para usar os dois juntos, por exemplo colocando limite de WIP dentro de uma Sprint.
 - **A diretriz faz diferença.** Quando pedi para separar as duas linhas de Kanban e explicar os termos em inglês, as respostas ficaram muito mais claras.
-- **Fontes em inglês não foram problema.** Metade das fontes está em inglês, e o notebook respondeu tudo em português, traduzindo e explicando os termos.
+- **O Deep Research ajuda, mas não decide.** Importei 24 fontes sem olhar e tive que voltar para revisar. Das 24, só 3 passaram nos meus critérios, e uma delas era um relatório escrito pela própria IA. A conferência tem que vir antes da importação.
+- **Fontes em inglês não foram problema.** A maioria das fontes está em inglês (7 de 9), e o notebook respondeu tudo em português, traduzindo e explicando os termos.
 - **O notebook não inventa no chat.** Na pergunta sobre salário, ele admitiu que as fontes não cobrem o assunto, em vez de chutar um número.
 - **Mas os materiais do Estúdio precisam ser conferidos.** Nos slides, aparecem números como "Risk reduction: +20%" e "Flow efficiency: +25%", que não estão em nenhuma das fontes: são decoração inventada pelo gerador. E o mapa mental colocou dentro de "O Método Kanban" coisas que vêm do Kanban Guide (como a definição "estratégia para otimizar o fluxo de valor" e as métricas Work Item Age e Throughput), ou seja, juntou as duas linhas que a minha diretriz pedia para separar. A diretriz vale para o chat, não para o Estúdio. Conclusão: a IA organiza, mas quem confere sou eu.
 
